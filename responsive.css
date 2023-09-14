@@ -1,0 +1,19 @@
+@media (min-width: 1281px) {
+    .top-navbar,
+    .bottom-navber,
+    .about-tech-info
+    {
+        padding: 20px 15%;
+    }
+    section{
+        padding: 20px 15%;
+    }
+    .rating{
+        padding: 100px 15%;
+    }
+}
+@media (max-width: 989px) {
+    .top-navbar{
+        display: none;
+    }
+}

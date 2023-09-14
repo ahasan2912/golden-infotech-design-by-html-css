@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Saira', sans-serif;
+}
+.top-navbar{
+    display: flex;
+    background-color: #e6f7f5;
+    padding: 20px 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.loaction-icon i{
+    color: #5a5858;
+    margin-right: 3px;
+    font-size: 17px;
+}
+.loaction-icon span{
+    font-size: 16px;
+    color: #006556;
+    font-weight: 550;
+}
+.email-icon a{
+    text-decoration: none;
+    color: #5a5858;
+    font-size: 16px;
+    font-weight: 550;
+}
+.email-icon a i{
+    margin-right: 5px;
+    font-size: 17px;
+}
+.social-icon a{
+    margin-right: 30px;
+}
+.social-icon a i{
+    color: #5a5858;
+    font-size: 17px;
+    font-weight: 550;
+}
+/* -------------------------------------------------------------- */
+.bottom-navber{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+    width: 100%;
+}
+.img-logo img{
+    width: 160px;
+}
+.menubar{
+    display: flex;
+    text-align: center;
+    margin-top: -10px;
+}
+.menubar li{
+    list-style: none;
+    margin: 0 20px;
+}
+.menubar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 550;
+    color: #5a5858;
+}
+.contact{
+    display: flex;
+    align-items: center;
+}
+.contact p{
+    font-size: 15px;
+    font-weight: 550;
+    color: #5a5858;
+    margin: 1px 0;
+}
+.contact i{
+    color: #30ad25;
+}
+.contact div{
+    margin-left: 10px;
+    margin-top: -5px;
+}
+/* --------------------------------Top Banner section-------------------------- */
+section{
+    padding: 20px 5%;
+    margin-top: 80px;
+}
+.top-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    margin-top: 20px;
+}
+.banner-text h1{
+    font-size:42px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 15px;
+}
+.banner-text p{
+    font-size: 18px;
+}
+.banner-img{
+    width: 40%;
+}
+.banner-img img{
+    width: 100%;
+    height: 400px;
+}
+.primary-btn{
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #006556;
+    background: #006556;
+    color: #fff;
+    font-weight: 550;
+    margin-top: 40px;
+}
+.primary-btn:hover{
+    background: #fff;
+     color: #333333;
+}
+/* -----------------------about-tech-info------------------------- */
+.about-tech-info{
+    background: #e6f7f5;
+    padding: 20px 5%;
+}
+.about-tech{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.services{
+    text-align: center;
+    padding: 0 22%;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.services h1{
+    font-size: 32px;
+}
+.services p{
+    font-size: 18px;
+}
+.service-box{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+}
+.service-box div{
+    border: 1px dotted #006556;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+.service-box div img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.service-box div h1{
+    font-size: 25px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.service-box div:hover{
+    transform: scale(1.1);
+    background: #e6f7f5;
+}
+.btn{
+    width: block;
+    text-align: center;
+    margin: 80px 0 0 0;
+}
+/* ------------------------------------ Rating------------------------------- */
+.rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 5%;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.rating h1{
+    font-size: 65px;
+    color: #006556;
+}
+.rating p{
+    color: #333333;
+    font-weight: 600;
+    font-size: 18px;
+}
+/* ---------------------------- work prosseing setion------------------------------- */
+.working-process{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+/* .working-process div{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+} */
