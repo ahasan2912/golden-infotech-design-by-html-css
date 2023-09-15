@@ -1,3 +1,6 @@
+@media (max-width:1539px) {
+    
+}
 @media (min-width: 1281px) {
     .top-navbar,
     .bottom-navber,
@@ -12,8 +15,119 @@
         padding: 100px 15%;
     }
 }
+@media (min-width:990px) and (max-width: 1540px){
+    .img-logo img{
+        width: 120px;
+    }
+    .menubar li{
+        margin: 0 12px;
+    }
+    .menubar li a{
+        font-size: 14px;
+    }
+    .working-process-box{
+        width: 50%;
+    }
+    .contact p{
+        font-size: 12px;
+    }
+}
 @media (max-width: 989px) {
     .top-navbar{
         display: none;
+    }
+    .img-logo img{
+        width: 100px;
+    }
+    .menubar li{
+        margin: 0 12px;
+    }
+    .menubar li a{
+        font-size: 10px;
+    }
+    .working-process-box{
+        width: 50%;
+    }
+    .contact p{
+        font-size: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .menubar,
+    .contact{
+        display: none;
+    }
+    .top-banner{
+        flex-direction: column;
+        text-align: left;
+    }
+    .banner-img {
+        width: 100%;
+    }
+    .about-tech{
+        flex-direction: column;
+        text-align: left;
+    }
+    .service-box{
+        grid-template-columns: repeat(2,minmax(200px,1fr));
+    }
+    section{
+        padding: 10px 5%;
+        margin-top: 0;
+    }
+    .top-navbar,
+    .bottom-navber,
+    .about-tech-info
+    {
+        padding: 20px 2%;
+    }
+    .img-logo img{
+        width: 160px;
+    }
+    .work-showcase{
+        grid-template-columns: repeat(2,minmax(200px,1fr));
+    }
+    .rating{
+        flex-direction: column;
+    }
+    .banner-text{
+        width: 100%;
+    }
+    .banner-img img {
+        width: 60%;
+        height: 300px;
+    }
+    .btn {
+        margin: 50px 0px 0px 0px;
+        margin-bottom: 40px;
+    }
+    .photo img {
+        width: 100%;
+        height: 300px;
+    }
+    .progrmming-lan{
+        grid-template-columns: repeat(4,minmax(0,1fr));
+    }
+}
+@media(max-width: 500px){
+    .working-process-box img{
+        width: 120px;
+    }
+    .progrmming-lan{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .work-showcase{
+        /* grid-template-columns: repeat(1,minmax(200,1fr)); */
+        display: flex;
+        flex-direction: column;
+    }
+    .latest-blog{
+        grid-template-columns: repeat(1,minmax(200px,1fr));
+    }
+    .service-box{
+        grid-template-columns: repeat(1,minmax(200px,1fr));
+    }
+    .services{
+        padding: 0;
     }
 }

@@ -65,11 +65,31 @@
     list-style: none;
     margin: 0 20px;
 }
+.menubar li a:hover{
+    color: #006556;
+}
 .menubar li a{
     text-decoration: none;
     font-size: 16px;
     font-weight: 550;
     color: #5a5858;
+}
+.menubar li a::after{
+    content: '';
+    display: block;
+    background: #006556;
+    height: 2px;
+    width: 0%;
+    margin: auto;
+    transition: all ease-in-out .3s;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+.menubar li a:hover::after{
+    width: 100%;
+}
+.menubar .none a:hover::after{
+    width: 0%;
 }
 .contact{
     display: flex;
@@ -88,6 +108,24 @@
     margin-left: 10px;
     margin-top: -5px;
 }
+/* -------------------------------- services-hover----------------------------- */
+.services-hover{
+    display: none;
+    grid-template-columns: repeat(3,minmax(250px,1fr));
+    grid-gap: 15px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    z-index: 15;
+    background-color: #e6f7f5;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+.menubar li:hover .services-hover{
+    display: grid;
+}
 /* --------------------------------Top Banner section-------------------------- */
 section{
     padding: 20px 5%;
@@ -95,7 +133,6 @@ section{
 }
 .top-banner{
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 .banner-text{
@@ -209,11 +246,166 @@ section{
     width: 100%;
     flex-direction: row;
     align-items: stretch;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transform: translateX(-150%);
+    animation: about-txt-animation 2s ease-in-out forwards;
 }
-/* .working-process div{
-    text-align: center;
-    width: 300px;
+@keyframes about-txt-animation {
+    100%{
+        transform: translate(0);
+    }
+}
+.working-process-box{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 25%;
+}
+.working-process-box:hover{
+    z-index: 10;
+    box-shadow:  5px 5px 15px 5px rgba(0, 0, 0, 0.3); 
+}
+/* -------------------------- Our Showcase Section----------------------------- */
+.work-showcase{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-items: stretch;
+}
+.design-activity{
+    transition: all 0.5s;
+    flex: 1;
+}
+.bkground-text{
     height: 300px;
-    border: 1px solid red;
-} */
+    width: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    object-position: center;
+    flex: 1;
+}
+.text{
+    background: #e6f7f5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.text h2{
+    font-size: 25px;
+    text-align: left;
+}
+.text a{
+    text-decoration: none;
+    color: #006556;
+    font-size: 19px;
+    font-weight: 550;
+}
+.bkground-text.one{
+    background-image: url(image/backgrond1.PNG);
+}
+.bkground-text.two{
+    background-image: url(image/backgrond2.PNG);
+}
+.bkground-text.three{
+    background-image: url(image/backgrond3.PNG);
+}
+.design-activity:hover{
+    transform: translateY(-5%);
+}
+/* --------------------------- Cliebt Seation--------------------------- */
+.client-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-client h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #525252;
+}
+.text-client p{
+    line-height: 25px;
+    color: #525252;
+}
+.photo img{
+    width: 100%;
+}
+/*---------------------- Technology Section------------------  */
+.progrmming-lan{
+    display: grid;
+    grid-template-columns: repeat(6,minmax(0,1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    width: 100%;
+    align-items: center;
+    flex: 1;
+ }
+ .progrmming-lan div{
+     padding: 10px;
+     transition: .5s;
+     border-radius: 2px;
+ }
+ .progrmming-lan div:hover{
+     transform: scale(1);
+     background: #e6f7f5;
+ }
+ .progrmming-lan div img{
+     width: 100%;
+ }
+ /* -----------------------Largest Blog-------------------------- */
+ .latest-blog{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(200px,1fr));
+    width: 100%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-items: stretch;
+ }
+ .blog{
+    background-image: url(image/guide.PNG);
+    background-size: 100% 100%;
+ }
+ .blog1{
+    background-image: url(image/june.PNG);
+    background-size: 100% 100%;
+ }
+ .text-blog{
+    padding: 20px;
+ }
+ .admin{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+ }
+ .admin a{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #404040;
+ }
+ .admin a i{
+    font-size: 20px;
+    margin-right: 3px;
+ }
+ .text h2{
+    color: #404040;
+    margin: 5px 0;
+ }
+ .text p{
+    margin: 5px 0;
+ }
+ .text .bold-text{
+    font-size: 22px;
+ }
+ .first-col{
+    grid-row: 1/3;
+ }
