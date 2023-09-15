@@ -108,6 +108,9 @@
     .progrmming-lan{
         grid-template-columns: repeat(4,minmax(0,1fr));
     }
+    .latest-blog{
+        grid-template-columns: repeat(1,minmax(200px,1fr));
+    }
 }
 @media(max-width: 500px){
     .working-process-box img{
@@ -130,4 +133,13 @@
     .services{
         padding: 0;
     }
+    .second-col-2_block{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(200px,1fr));
+        text-align: center;
+        justify-content: space-between;
+     }
+     .text-blog{
+        width: 100%;
+     }
 }
