@@ -51,6 +51,33 @@
     .contact p{
         font-size: 10px;
     }
+    .block-category ul li a{
+        font-size: 15px;
+    }
+    .block-category .address li:last-child{
+        font-size: 13px;
+    }
+    .block-category .address li .number{
+        font-weight: 550;
+        margin-right: 0px;
+    }
+    .media a{
+        margin-right: 0px;
+        margin-left: 5px;
+    }
+    .media a i{
+        font-size: 20px;
+        color: #006556;
+    }
+    .box{
+        width: 250px;
+    }
+    .signup h3{
+        font-size: 22px;
+    }
+    .signup p{
+        font-size: 15px;
+    }
 }
 @media (max-width: 767px) {
     .menubar,
@@ -111,6 +138,72 @@
     .latest-blog{
         grid-template-columns: repeat(1,minmax(200px,1fr));
     }
+    .category{
+        flex-direction: column;
+        align-items: center;
+    }
+    .company-logo{
+        width: 40%;
+        text-align: center;
+    }
+    .block-category{
+        flex-wrap: wrap;
+        width: 80%;
+        margin-top: 40px;
+    }
+    .block-category .address{
+        margin-left: 0px;
+    }
+    .block-category ul{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    .membership{
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .membership div img{
+        width: 80px;
+    }
+    .newsletter{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr); 
+    }
+    .signup{
+        grid-column: 1/3;
+    }
+    .subscribe-box{
+        grid-row: 2/-1;
+        grid-column: 1/-1;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        border: 1px solid #e0dada;
+    }
+    .button{
+        margin-top: 15px;
+        width: 100%;
+        margin-right: 10px;
+        text-align: center;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 30px 0;
+        text-align: center;
+    }
+    .footer .Copyright{
+        margin-left: 0px;
+        margin: 5px 0;
+    }
+    .footer p{
+        font-size: 13px;
+    }
 }
 @media(max-width: 500px){
     .working-process-box img{
@@ -142,4 +235,42 @@
      .text-blog{
         width: 100%;
      }
+     .block-category .address li{
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    .block-category .address li i{
+        font-size: 10px;
+    }
+    .membership{
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+        width: 30%;
+    }
+    .mebership-logo{
+        margin-left: 0px;
+    }
+    .membership div img{
+        width: 90px;
+    }
+    .company-logo{
+        width: 80%;
+        text-align: center;
+        margin-left: 25px;
+    }
+    .signup h3{
+        font-size: 18px;
+        color: #5e5a5a;
+    }
+    .signup p{
+        font-size: 13px;
+        color: #353333;
+    }
+    .media a i{
+        font-size: 16px;
+    }
+    .media a{
+        margin: 6px;
+    }
 }
