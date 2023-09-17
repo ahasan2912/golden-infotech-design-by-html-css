@@ -338,10 +338,16 @@
      }
      .block-category .address li{
         margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .block-category .address li span{
         font-size: 13px;
     }
     .block-category .address li i{
-        font-size: 10px;
+        font-size: 13px;
+    }
+    .block-category .address li .number{
+        font-size: 12px;
     }
     .membership{
         grid-template-columns: repeat(1,1fr);
